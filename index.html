@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="A clear, adaptable route to your next learning goal.">
+  <title>LearnMap — find your next step</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="LearnMap home"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 24 14 8l5 10 3-6 5 12"/><circle cx="6" cy="24" r="2.3"/><circle cx="14" cy="8" r="2.3"/><circle cx="19" cy="18" r="2.3"/><circle cx="22" cy="12" r="2.3"/><circle cx="27" cy="24" r="2.3"/></svg></span><span>learn<span class="brand-light">map</span></span></a>
+      <div class="nav-label">WORKSPACE</div>
+      <nav aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span> Overview</button>
+        <button class="nav-item" data-view="route"><span class="nav-icon route-icon">⌁</span> My learning route</button>
+      </nav>
+      <div class="side-spacer"></div>
+      <div class="sidebar-tip"><span class="tip-icon">✳</span><p><strong>Small steps add up.</strong><br>Every skill you build gets you closer to your destination.</p></div>
+      <button class="profile"><span class="avatar">S</span><span class="profile-copy"><strong>Sam Learner</strong><small>Your learning space</small></span><span class="profile-more">···</span></button>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="breadcrumb"><span>Workspace</span><span class="crumb-slash">/</span><strong id="crumb-current">Overview</strong></div><div class="top-actions"><span class="today-label" id="today-label"></span><button class="icon-button" id="help-button" aria-label="About LearnMap" title="About LearnMap">?</button></div></header>
+      <section id="view-home" class="view"></section>
+      <section id="view-route" class="view hidden"></section>
+    </main>
+  </div>
+  <div id="dialog-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js?v=6"></script>
+</body>
+</html>

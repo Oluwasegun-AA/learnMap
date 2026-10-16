@@ -1,0 +1,13 @@
+{
+  "name": "learnmap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local browser prototype for building and tracking learning routes.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
